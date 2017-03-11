@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+
+  </head>
+  <body>
+      <h1 align="center">Cadastro de alunos(as)</h1>
+
+      <form name="cadastro" method="post" action="validacao.html"> <!-- estrutura de form, name é o nome do form, method get significa informações explícitas na url, method post informações implícitas. Action define onde vai processar as informações -->
+        <table align="center" class="cadastro">
+          <th colspan="2">
+            Dados Pessoais
+          </th>
+          <tr>
+            <td>
+              Nome:
+            </td>
+            <td>
+               <input type="text" name="nome" /><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Matrícula:
+            </td>
+            <td>
+              <input type="text" name="matricula" /><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              CPF:
+            </td>
+            <td>
+              <input type="number" name="cpf" /><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Sexo:
+            </td>
+            <td>
+              <input type="radio" name="genero" value="F" />Feminino
+              <input type="radio" name="genero" value="M" />Masculino <br>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Telefone:
+            </td>
+            <td>
+              <input type="text" name="telefone" /><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Celular:
+            </td>
+            <td>
+              <input type="text" name="celular" /><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              E-mail:
+            </td>
+            <td>
+              <input type="text" name="email" /><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Área:
+            </td>
+            <td>
+              <input type="checkbox" name="area" value="" /> BD
+             <input type="checkbox" name="area" value="" /> Redes
+             <input type="checkbox" name="area" value="" /> ES <br>
+            </td>
+          </tr>
+
+        </table>
+
+        <br/>
+        <br/>
+
+        <table align="center" class="cadastro">
+          <th colspan="2">
+            Endereço
+          </th>
+          <tr>
+            <td>
+              Rua:
+            </td>
+            <td>
+              <input type="text" name="rua" /><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Número:
+            </td>
+            <td>
+              <input type="text" name="numero" /><br>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Complemento:
+            </td>
+            <td>
+              <input type="text" name="complemento" /><br>
+            </td>
+          </tr>
+
+           <tr>
+             <td>
+               CEP:
+             </td>
+             <td>
+               <input type="text" name="cep" /><br>
+             </td>
+           </tr>
+
+           <tr>
+             <td>
+               Cidade
+             </td>
+             <td>
+               <div id="listaCidades">
+                   <select name="cidade">
+                   <option value="1">João Monlevade</option>
+                   <option value="2">Itabira</option>
+                   <option value="3">Itaúna</option>
+                   <option value="4">Belo Horizonte</option>
+                   <option value="5">Alvinópolis</option>
+                 </select><br>
+               </div>
+             </td>
+           </tr>
+
+           <tr>
+             <td>
+               Estado:
+             </td>
+             <td>
+               <div id="listaEstado">
+                   <select name="estado">
+                   <option value="1">MG</option>
+                   <option value="2">RJ</option>
+                   <option value="3">SP</option>
+                   <option value="4">ES</option>
+                 </select><br>
+               </div>
+             </td>
+           </tr>
+
+         </table>
+
+         <br/>
+         <br/>
+
+         <table align="center" class="cadastro">
+           <th colspan="2">
+             Dados para Acesso
+           </th>
+           <tr>
+             <td>
+               Usuário:
+             </td>
+             <td>
+               <input type="text" name="usuario" /><br>
+             </td>
+           </tr>
+
+           <tr>
+             <td>
+               Senha:
+             </td>
+             <td>
+               <input type="password" name="senha" /><br>
+             </td>
+           </tr>
+
+           <tr>
+             <td>
+               Confirma Senha:
+             </td>
+             <td>
+               <input type="password" name="confSenha" /><br>
+             </td>
+           </tr>
+         </table>
+
+         <br/>
+
+         <table align="center" class="cadastro">
+           <tr>
+             <td colspan="2" align="right">
+               <input type="submit" name="cadastrar" value="Cadastrar" />
+               <input type="reset" name="limpar" value="Limpar" />
+             </td>
+           </tr>
+
+        </table>
+      </form>
+
+      <form name="voltar" method="post" action="Menu.html">
+        <table align="center" class="cadastro">
+          <tr>
+            <td>
+                <input type="submit" name="cadastrar" value="Voltar" />
+            </td>
+          </tr>
+        </table>
+      </form>
+
+  </body>
+</html>
